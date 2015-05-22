@@ -15,10 +15,18 @@ var loginValidar = function(){
    }
    else{
 	   $.mobile.loading('hide');
-	   alert("Usuario y/o clave son incorrectos");
+	   navigator.notification.alert(
+            'Usuario y/o clave son incorrectos!',  // message
+            alertDismissed,         // callback
+            'Información',            // title
+            'Aceptar'                  // buttonName
+        );
 	   $("#usuario").val("");
 	   $("#clave").val("");
 	   $("#usuario").focus();
 	   $(".loadLogin").fadeOut("fast");
    }
 };
+
+function alertDismissed(){
+}
