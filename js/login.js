@@ -11,14 +11,14 @@ $(document).ready(function(e) {
 var loginValidar = function(){
    if ( $("#usuario").val() == "admin" && $("#clave").val() == "1234" )
    {
-	   location.href="panel.html";
+	   $.mobile.changePage( "panel.html", {transition: "slider", reloadPage:true} );
    }
    else{
 	   $.mobile.loading('hide');
 	   navigator.notification.alert(
             'Usuario y/o clave son incorrectos!',  // message
             alertDismissed,         // callback
-            'Información',            // title
+            'Informaci\u00f3n',            // title
             'Aceptar'                  // buttonName
         );
 	   $("#usuario").val("");

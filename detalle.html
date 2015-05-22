@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile.theme-1.4.5.min.css">
+     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/funciones.js"></script>    
@@ -65,7 +66,7 @@
             
             <div id="two" class="ui-content ui-body ui-body-a">
             	<h3 class="titulo">OC00001</h3>
-                 <form>
+                
             
                 <label for="usuario">Tiempo Aprox. de llegada:</label>
                 <input type="time" name="hora" id="hora" value=""  />
@@ -97,7 +98,7 @@
 <textarea cols="40" rows="2" name="textarea" id="textarea"></textarea>
                 
                 
-                </form>
+                
             </div>
             
         </div>
@@ -109,7 +110,7 @@
 		<div data-role="navbar" data-iconpos="top">
 		<ul>
 			<li><a href="#" data-icon="check">Guardar</a></li>
-			<li><a href="panel.html" data-icon="back">Regresar</a></li>			 
+			<li><a data-ajax="false" href="panel.html" data-icon="back">Regresar</a></li>			 
 		</ul>
 	</div><!-- /navbar -->
 	</div><!-- /footer -->
